@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lexend+Deca:wght@100..900&family=Protest+Guerrilla&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bright-orange: hsl(31, 77%, 52%);
+  --dark-cyan: hsl(184, 100%, 22%);
+  --verydark-cyan: hsl(179, 100%, 13%);
+  --transparent-white: hsla(0, 0%, 100%, 0.75);
+  --very-light-grey: hsl(0, 0%, 95%);
+  --ff-big-shoulders-display: "Big Shoulders Display", sans-serif;
+  --ff-lexand-deca: "Lexend Deca", sans-serif;
+}
+
+html,
+body {
+  font-size: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100%;
+}
+main {
+  min-height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  height: 100%;
+}
+/* cards */
+.cards {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  padding: 1.5rem;
+}
+
+img {
+  width: 30%;
+}
+
+h2 {
+  color: var(--very-light-grey);
+  font-family: var(--ff-big-shoulders-display);
+  font-weight: 700;
+  font-size: 2.5rem;
+}
+
+p {
+  color: var(--transparent-white);
+  font-weight: 400;
+  line-height: 2rem;
+}
+#card1 {
+  background-color: var(--bright-orange);
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 0;
+  /* border-top-right-radius: 0; */
+  /* border-bottom-right-radius: 0px; */
+  border-bottom-left-radius: 6px;
+}
+/* button */
+button {
+  width: 60%;
+  border-radius: 5rem;
+  height: 3rem;
+  width: none;
+  font-family: var(--ff-lexand-deca);
+  border: none;
+}
+
+#card1 button {
+  color: var(--bright-orange);
+}
+/* card 2 */
+#card-2 {
+  background-color: var(--dark-cyan);
+}
+
+#card-2 button {
+  color: var(--dark-cyan);
+}
+
+#card-3{
+    background-color:var(--verydark-cyan);
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
+#card-3 button {
+  color: var(--verydark-cyan);
+}
+
+@media (max-width: 431px) {
+    section {
+      flex-direction: column;
+      width: 90%;
+    }
+  
+    main {
+      margin-top: 25px;
+      margin-bottom: 25px;
+    }
+  
+    #card1 {
+      background-color: var(--bright-orange);
+      border-bottom-left-radius: 0;
+      /* border-top-right-radius: 0; */
+      /* border-bottom-right-radius: 0px; */
+      border-top-right-radius: 6px;
+    }
+  
+    #card-3{
+      background-color:var(--verydark-cyan);
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 6px;
+      border-bottom-left-radius: 6px;
+  }
+  }
